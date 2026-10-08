@@ -1,0 +1,131 @@
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.total_cart_amount {
+  text-align: center;
+  margin: 16px 0 4px;
+}
+
+.cart-summary,
+.cart-empty {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.cart-item-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-item-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.cart-item-cost {
+  color: #555;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart-item-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #4caf50;
+  background: #fff;
+  color: #2e7d32;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-item-button:hover {
+  background: #e8f5e9;
+}
+
+.cart-item-quantity-value {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cart-item-total {
+  font-weight: 700;
+}
+
+.cart-item-delete {
+  align-self: flex-start;
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-item-delete:hover {
+  background: #c62828;
+}
+
+.continue_shopping_btn {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.get-started-button1 {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.get-started-button1:hover {
+  background: #1b5e20;
+}
+
+@media (max-width: 500px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cart-item-delete {
+    align-self: center;
+  }
+  .cart-item-quantity {
+    justify-content: center;
+  }
+}

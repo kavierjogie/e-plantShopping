@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f8f4;
+  color: #1f2d1f;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+/* ---------- Landing page ---------- */
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+.landing-page.fade-out {
+  display: none;
+}
+
+/* Background image for the Paradise Nursery landing page */
+.background-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://images.pexels.com/photos/1301856/pexels-photo-1301856.jpeg?auto=compress&cs=tinysrgb&w=1920');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.background-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  max-width: 1200px;
+  color: #fff;
+}
+
+.landing_content {
+  flex: 1 1 320px;
+  text-align: center;
+}
+
+.landing_content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #4caf50;
+  margin: 12px auto;
+}
+
+.landing_content p {
+  font-size: 1.3rem;
+  margin-bottom: 28px;
+}
+
+.get-started-button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.get-started-button:hover {
+  background: #388e3c;
+}
+
+.aboutus_container {
+  flex: 1 1 360px;
+}
+
+.about-us-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  line-height: 1.6;
+}
+
+.about-us-description {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #a5d6a7;
+  margin-bottom: 12px;
+}
+
+.about-us-content {
+  margin-bottom: 12px;
+}
+
+/* ---------- Product list wrapper ---------- */
+.product-list-container {
+  display: none;
+}
+
+.product-list-container.visible {
+  display: block;
+}
